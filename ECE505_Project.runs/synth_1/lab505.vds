@@ -1,0 +1,338 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Dec 12 18:16:52 2022
+# Process ID: 11288
+# Current directory: C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1
+# Command line: vivado.exe -log lab505.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab505.tcl
+# Log file: C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1/lab505.vds
+# Journal file: C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1\vivado.jou
+# Running On: HP-ZBOOK, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16981 MB
+#-----------------------------------------------------------
+source lab505.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/evanw/ECE505_Project/ECE505_Project.srcs/utils_1/imports/synth_1/lab505.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/evanw/ECE505_Project/ECE505_Project.srcs/utils_1/imports/synth_1/lab505.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top lab505 -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13516
+WARNING: [Synth 8-8895] 'locked' is already implicitly declared on line 150 [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:188]
+WARNING: [Synth 8-6901] identifier 'locked' is used before its declaration [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:69]
+WARNING: [Synth 8-6901] identifier 'locked' is used before its declaration [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:70]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab505' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/ALU.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/ALU.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/control_unit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/control_unit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/alu_control.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/alu_control.v:22]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/reg_file.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/reg_file.v:22]
+INFO: [Synth 8-6157] synthesizing module 'imm_gen' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/imm_gen.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'imm_gen' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/imm_gen.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1/.Xil/Vivado-11288-HP-ZBOOK/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1/.Xil/Vivado-11288-HP-ZBOOK/realtime/blk_mem_gen_0_stub.v:5]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'blk_mem_gen_0' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:175]
+INFO: [Synth 8-6157] synthesizing module 'reg_rom' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/reg_rom.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'reg_rom' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/reg_rom.v:22]
+WARNING: [Synth 8-689] width (11) of port connection 'addr' does not match port width (5) of module 'reg_rom' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:182]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1/.Xil/Vivado-11288-HP-ZBOOK/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1/.Xil/Vivado-11288-HP-ZBOOK/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'lab505' (0#1) [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/lab505.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1293.566 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/evanw/Basic_RISCV/ECE505_Project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram0'
+Finished Parsing XDC File [c:/Users/evanw/Basic_RISCV/ECE505_Project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram0'
+Parsing XDC File [c:/Users/evanw/Basic_RISCV/ECE505_Project.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clkWiz'
+Finished Parsing XDC File [c:/Users/evanw/Basic_RISCV/ECE505_Project.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clkWiz'
+Parsing XDC File [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/constrs/time.xdc]
+Finished Parsing XDC File [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/constrs/time.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1293.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1293.566 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLOCK_20. (constraint file  c:/Users/evanw/Basic_RISCV/ECE505_Project.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLOCK_20. (constraint file  c:/Users/evanw/Basic_RISCV/ECE505_Project.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for ram0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clkWiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Y1_reg' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/ALU.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'zero1_reg' [C:/Users/evanw/Downloads/Supportive Document/ECE505F22/demoModule/ALU.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	  33 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   5 Input    5 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP a1/Y10, operation Mode is: A*B.
+DSP Report: operator a1/Y10 is absorbed into DSP a1/Y10.
+DSP Report: operator a1/Y10 is absorbed into DSP a1/Y10.
+DSP Report: Generating DSP a1/Y10, operation Mode is: A*B.
+DSP Report: operator a1/Y10 is absorbed into DSP a1/Y10.
+DSP Report: operator a1/Y10 is absorbed into DSP a1/Y10.
+DSP Report: Generating DSP a1/Y10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator a1/Y10 is absorbed into DSP a1/Y10.
+DSP Report: operator a1/Y10 is absorbed into DSP a1/Y10.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1293.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|lab505      | a4/file_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'CLOCK_20'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1294.949 ; gain = 1.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1320.320 ; gain = 26.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|lab505      | a4/file_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1327.504 ; gain = 33.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B          | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN>>17+A*B | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |clk_wiz     |     1|
+|3     |BUFG        |     1|
+|4     |CARRY4      |    30|
+|5     |DSP48E1     |     3|
+|6     |LUT1        |    37|
+|7     |LUT2        |   187|
+|8     |LUT3        |    86|
+|9     |LUT4        |    83|
+|10    |LUT5        |   118|
+|11    |LUT6        |   225|
+|12    |MUXF7       |     1|
+|13    |RAM32M      |    10|
+|14    |RAM32X1D    |     4|
+|15    |FDRE        |    11|
+|16    |LD          |    33|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.277 ; gain = 49.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.277 ; gain = 49.711
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1343.277 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1343.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  LD => LDCE: 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: fbee70c4
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1343.277 ; gain = 49.711
+INFO: [Common 17-1381] The checkpoint 'C:/Users/evanw/Basic_RISCV/ECE505_Project.runs/synth_1/lab505.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab505_utilization_synth.rpt -pb lab505_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 12 18:17:50 2022...

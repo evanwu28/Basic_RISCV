@@ -70,10 +70,12 @@
 module clk_wiz_0_clk_wiz 
 
  (// Clock in ports
+  input         clkfb_in,
   // Clock out ports
   output        clk_out1,
   output        clk_out2,
   output        clk_out3,
+  output        clkfb_out,
   // Status and control signals
   input         reset,
   output        locked,
@@ -110,7 +112,6 @@ wire clk_in2_clk_wiz_0;
   wire        psdone_unused;
   wire        locked_int;
   wire        clkfbout_clk_wiz_0;
-  wire        clkfbout_buf_clk_wiz_0;
   wire        clkfboutb_unused;
     wire clkout0b_unused;
    wire clkout1b_unused;
@@ -163,7 +164,7 @@ wire clk_in2_clk_wiz_0;
     .CLKOUT5             (clkout5_unused),
     .CLKOUT6             (clkout6_unused),
      // Input clock control
-    .CLKFBIN             (clkfbout_buf_clk_wiz_0),
+    .CLKFBIN             (clkfb_in),
     .CLKIN1              (clk_in1_clk_wiz_0),
     .CLKIN2              (1'b0),
      // Tied to always select the primary input clock
@@ -194,10 +195,8 @@ wire clk_in2_clk_wiz_0;
 //--------------------------------------
  // Output buffering
   //-----------------------------------
+  assign clkfb_out = clkfbout_clk_wiz_0;
 
-  BUFG clkf_buf
-   (.O (clkfbout_buf_clk_wiz_0),
-    .I (clkfbout_clk_wiz_0));
 
 
 
